@@ -4,12 +4,14 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+
     EditText edmonth;
     EditText ednext;
 
@@ -19,10 +21,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         edmonth = findViewById(R.id.month);
         ednext = findViewById(R.id.next);
+
+
+
+
     }
 
     public void acc(View view) {
         float money = 0;
+
+
         if (!TextUtils.isEmpty(edmonth.getText().toString())) {
             float month = Float.parseFloat(edmonth.getText().toString());
             if (month >= 1 && 10 >= month) {
@@ -69,9 +77,10 @@ public class MainActivity extends AppCompatActivity {
                                 }
                         )
                 .show();
-
             }
-
-
+            float coco = money;
+        Intent intent = new Intent(this,result.class);
+            intent.putExtra("coco",coco);
+        startActivity(intent);
         }
     }

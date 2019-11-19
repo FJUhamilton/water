@@ -4,6 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gogoeo"
     tools:context=".result">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="421dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="212dp"
+        android:background="#2196F3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/remoney"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="172dp"
+            android:layout_marginTop="76dp"
+            android:text="giiiiii"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

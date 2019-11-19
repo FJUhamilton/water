@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 public class result extends AppCompatActivity {
     TextView remoney;
+    TextView monthnext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +18,9 @@ public class result extends AppCompatActivity {
         float coco = intent.getFloatExtra("coco",-1);
         Log.d("Result",coco+"");
         remoney =findViewById(R.id.remoney);
-        remoney.setText(coco+"");
+        monthnext = findViewById(R.id.monthnext);
+        int recoco = (int)(coco+0.5f);
+        remoney.setText(recoco+"");
+        monthnext.setText("抄表");
     }
 }

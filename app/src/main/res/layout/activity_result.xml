@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gogoeo"
+    android:background="@drawable/shape"
     tools:context=".result">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="421dp"
         android:layout_height="226dp"
-        android:layout_marginTop="212dp"
-        android:background="#2196F3"
+        android:layout_marginTop="228dp"
+        android:background="#4781AF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 

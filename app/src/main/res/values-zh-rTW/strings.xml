@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">water</string>
+    <string name="count">計算</string>
+    <string name="every_other_month">隔月抄表</string>
+    <string name="monthy">每月抄表</string>
+</resources>

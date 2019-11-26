@@ -22,9 +22,6 @@ public class MainActivity extends AppCompatActivity {
         edmonth = findViewById(R.id.month);
         ednext = findViewById(R.id.next);
 
-
-
-
     }
 
     public void acc(View view) {
